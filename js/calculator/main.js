@@ -287,9 +287,9 @@ function answer() {
     clean();
     Swal.fire({
         icon: 'success',
-        title: Rr,
-        text: 'Something went wrong!',
-        footer: '<a href="">Why do I have this issue?</a>'
+        text: 'Su resultado es:',
+        title: Rr,        
+        footer: '<a href="../calculator/js/index.html">Inicio</a>'
     })
 }//End function answer
 
