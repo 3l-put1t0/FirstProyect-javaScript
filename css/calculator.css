@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Playfair+Display:wght@400;500&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&family=Vidaloka&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(35, 33, 33);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.c {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#container {
+  border: 2px solid white;
+}
+#container #S1 {
+  width: auto;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 2px solid bisque;
+}
+#container #S1 .print {
+  width: auto;
+  height: 2rem;
+  background-color: antiquewhite;
+}
+#container #S1 .print h2 {
+  font-size: medium;
+  font-family: "Press Start 2P", cursive;
+}
+#container #S2 {
+  border: 2px solid bisque;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 55% auto;
+  grid-template-areas: "S21 S22";
+}
+#container #S2 #S21 {
+  grid-area: S21;
+  display: grid;
+  place-items: center;
+}
+#container #S2 #S21 .number {
+  width: 17rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#container #S2 #S22 {
+  grid-area: S22;
+  display: grid;
+  grid-template-rows: 33% auto;
+  grid-template-areas: "clear" "sign";
+  padding-left: 0.8rem;
+}
+#container #S2 #S22 .clear {
+  grid-area: clear;
+  width: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#container #S2 #S22 .sign {
+  grid-area: sign;
+  width: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#container #S3 {
+  border: 2px solid bisque;
+  width: auto;
+  height: auto;
+  padding: 0.2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "g e";
+}
+#container #S3 .ground {
+  grid-area: g;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#container #S3 .equal {
+  grid-area: e;
+}
+
+.options {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  background-color: rgb(9, 9, 9);
+  color: white;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  font-size: x-large;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 0 0 0.8rem white;
+}
+.options:hover {
+  box-shadow: 0 0 4rem rgb(255, 0, 170);
+  transition: 0.5s;
+}
+
+#equals {
+  width: 9rem;
+  border-radius: 10%;
+}
+#equals:hover {
+  box-shadow: 0 0 4rem rgb(0, 191, 255);
+  transition: 0.5s;
+}
+
+#dot {
+  text-align: center;
+}
+
+#plus:hover, #subtract:hover, #multiply:hover, #division:hover {
+  box-shadow: 0 0 4rem rgb(0, 255, 0);
+  transition: 0.5s;
+}
+
+.num:focus {
+  box-shadow: 0 0 4rem rgb(255, 0, 0);
+  transition: 0.5s;
+}
+
+.espe:focus {
+  box-shadow: 0 0 4rem rgb(255, 0, 0);
+  transition: 0.5s;
+}
+
+.cl:hover {
+  box-shadow: 0 0 4rem rgb(101, 84, 254);
+  transition: 0.5s;
+}
+.cl:focus {
+  box-shadow: 0 0 4rem rgb(0, 0, 0);
+  transition: 0.5s;
+}/*# sourceMappingURL=calculator.css.map */
