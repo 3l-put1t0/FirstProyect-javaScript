@@ -18,6 +18,8 @@ console.log(Boolean(objOperation[0]))
 
 function input(event) {
     let _Txt = event.target.innerText;
+    let id = event.target.id;
+    console.log("ID " + id);
     let _write = true;
     let _boolSign = false;
 

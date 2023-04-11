@@ -1,0 +1,96 @@
+@import "./utilities/reset";
+@import "./utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Playfair+Display:wght@400;500&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&family=Vidaloka&display=swap");
+
+#c{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+// section, nav{
+//     height: 100px;
+//     border: 2px solid white;
+// }
+.sec_principal{
+    width: 100vw;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: 60% auto;
+    // grid-template-areas: "base" "add";
+    border: 2px solid rgb(200, 200, 200);
+
+    .content{
+        // grid-area: base;
+        border: 2px solid rgb(124, 153, 249);
+        .item{
+            width: 300px;
+            height: 400px;
+            border: 2px solid wheat;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .iconify{
+                width: 60px;
+                height: 60px;
+                border: 2px solid wheat;
+                border-radius: 50%;
+                background-color: blueviolet;
+            }
+            // .buy{
+            //     width: 60px;
+            //     height: 60px;
+            //     background-color: rgb(20, 212, 42);
+            //     border-radius: 50%;
+            //     display: flex;
+            //     justify-items: center;
+              
+                
+            // }
+            button{
+                width: 60px;
+                height: 60px;
+                background-color: rgb(212, 20, 212);
+            }
+        }
+    }
+    .market{
+        // grid-area: add;
+        width: 200px;
+        height: 300px;
+        border: 2px solid rgb(249, 124, 124);
+        .imgBuyShow{
+            width: 200px;
+            height: auto;
+        }
+    }
+
+}
+
+
+
+strong{
+    color: wheat;
+}
+
+
+h2{
+    color: aqua;
+}
+h2{
+    color: rgb(47, 255, 0);
+}
+
+#iconSend{
+    width: 40px;
+    height: 40px;
+}
+
+.iconify_buy{
+    width: 40px;
+    height: 40px;
+}

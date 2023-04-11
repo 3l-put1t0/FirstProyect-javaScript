@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Playfair+Display:wght@400;500&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&family=Vidaloka&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(35, 33, 33);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#c {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec_principal {
+  width: 100vw;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(200, 200, 200);
+}
+.sec_principal .content {
+  border: 2px solid rgb(124, 153, 249);
+}
+.sec_principal .content .item {
+  width: 300px;
+  height: 400px;
+  border: 2px solid wheat;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec_principal .content .item .iconify {
+  width: 60px;
+  height: 60px;
+  border: 2px solid wheat;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+.sec_principal .content .item button {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(212, 20, 212);
+}
+.sec_principal .market {
+  width: 200px;
+  height: 300px;
+  border: 2px solid rgb(249, 124, 124);
+}
+.sec_principal .market .imgBuyShow {
+  width: 200px;
+  height: auto;
+}
+
+strong {
+  color: wheat;
+}
+
+h2 {
+  color: aqua;
+}
+
+h2 {
+  color: rgb(47, 255, 0);
+}
+
+#iconSend {
+  width: 40px;
+  height: 40px;
+}
+
+.iconify_buy {
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=market.css.map */
