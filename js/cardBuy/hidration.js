@@ -100,7 +100,13 @@ const drawHTML = () => {
     c.append(nav);
     c.append(content);
     c.append(foot);
+    
+    //*******************************************NAVEGATOR************************************************ */
+    const divNav = document.createElement("h1")
+    divNav.className = "titlePrincipal";
+    divNav.innerText = "MINECRAFT SHOPPING";
 
+    nav.append(divNav);
     //*****************************************CONTENT PRINCIPAL***************************************** */
     //Se añade elementos en el contenedor con nombre "content", donde ira distribuida la información
     const S1 = document.createElement("section");       //Se crea sección para buscar y filtrar
@@ -157,17 +163,33 @@ const drawHTML = () => {
     S22.append(S22Inf);
     S22.append(S22Foo);
 
+    const titleBuy = document.createElement("div");
+    titleBuy.className = "divTitleBuy";
+    titleBuy.innerHTML = `<h1 id="titleBuy">PRODUCTOS SELECCIONADOS</h1>`;
+
+    S22Nav.append(titleBuy);
+
+    const infoFooter = document.createElement("h2");
+    infoFooter.id = "totalBuy";
+    infoFooter.innerHTML = `<p id="totalBuyP">TOTAL A PAGAR: $ 0 </p>`;
+
+    S22Foo.append(infoFooter);
+
+
     //**********************************************FOOTER*************************************/
     //Se añade en el footer las redes sociales
     const face = document.createElement("div");
     face.className = "redesSociales";
     face.id = "facebook";
+    face.innerHTML = `<span class="iconify ico_fotter" data-icon="ic:baseline-facebook" style="color: white;"></span>`;
     const youtube = document.createElement("div");
     youtube.className = "redesSociales";
     youtube.id = "youtube";
+    youtube.innerHTML = `<span class="iconify ico_fotter" data-icon="mingcute:youtube-fill" style="color: white;"></span>`;
     const insta = document.createElement("div");
     insta.className = "redesSociales";
     insta.id = "insta";
+    insta.innerHTML = `<span class="iconify ico_fotter" data-icon="mdi:instagram" style="color: white;"></span>`;
 
     foot.append(face);
     foot.append(youtube);
@@ -185,14 +207,14 @@ function drawProduct(object) {
         item.className = "item";
         item.id = `div_${i.id}`;
         item.innerHTML += `
-            <h2>${i.name}</h2>
-            <img src="${i.img}" alt="">
-            <h3> $ ${i.price}</h3>
-            <p class="show" id=p_${i.id}></p>
-            <div class="input" id=divInput${i.id}>
+            <h2 class="titleItem">${i.name}</h2>
+            <img class="imgItem" src="${i.img}" alt="">
+            <p class="showItems" id=p_${i.id}></p>
+            <h3> $ ${i.price}</h3>            
+            <div class="input inputNumber" id=divInput${i.id}>
                 <input class="account" id=inputb_${i.id} type="number" min="1" max="100" value="1">
-                <button class="+" id=b_${i.id}+ onclick="RegisterAmount(event)">+</button>
-                <button class="-" id=b_${i.id}- onclick="RegisterAmount(event)">-</button>
+                <button class="+ plus" id=b_${i.id}+ onclick="RegisterAmount(event)">+</button>
+                <button class="- subt" id=b_${i.id}- onclick="RegisterAmount(event)">-</button>
             </div>
             <div class="input" id=divBtn${i.id}>
                 <span class="iconify" id=${i.id} onclick=addBuy(event) data-icon="mdi:shopping-cart-arrow-down" style="color: white;"></span>

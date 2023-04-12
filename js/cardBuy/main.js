@@ -63,11 +63,11 @@ function RegisterAmount(event) {
     let operation = event.target.className;
     amount = Number(numberItems.value);
 
-    if (operation === "+") {
+    if (operation[0] === "+") {
         amount = Number(numberItems.value);
         amount++;
         numberItems.value = amount;
-    } else if (operation === "-") {
+    } else if (operation[0] === "-") {
         amount = Number(numberItems.value);
         amount--;
         numberItems.value = amount;
@@ -269,17 +269,17 @@ function drawStructureBuy(id, obj) {
 
             let divNav = document.createElement("article");
             let divBody = document.createElement("article");
-            divNav.className = "buyShow";
+            divNav.className = "buyShowNav";
             divNav.id = `divNavBuy_${k.id}`;
-            divBody.className = "buyShow";
+            divBody.className = "buyShowBody";
             divBody.id = `divBodyBuy_${k.id}`;
             contentBuy.append(divNav);
             contentBuy.append(divBody);
 
             let divNavName = document.createElement("div");
             let divNavIco = document.createElement("div");
-            divNavName.className = "buyShow";
-            divNavIco.className = "buyShow";
+            divNavName.className = "buyShowTitle";
+            divNavIco.className = "buyShowIco";
             divNavName.id = `divNaveBuyName_${k.id}`;
             divNavIco.id = `divNaveBuyIco_${k.id}`;
             divNavName.innerHTML = `
@@ -290,8 +290,8 @@ function drawStructureBuy(id, obj) {
 
             let divNavIcon = document.createElement("div");
             let divNavBuyNum = document.createElement("div");
-            divNavIcon.className = "buyShow";
-            divNavBuyNum.className = "buyShow";
+            divNavIcon.className = "buyShowIconoo";
+            divNavBuyNum.className = "buyShowNumber";
             divNavIcon.id = `divNaveBuyIcon_${k.id}`;
             divNavBuyNum.id = `divNaveBuyNum_${k.id}`;
             divNavIcon.innerHTML = `<span class="iconify iconify_buy" data-icon="mdi:basket-fill" style="color: white;"></span>`;
@@ -301,26 +301,28 @@ function drawStructureBuy(id, obj) {
 
             let divBodyLeft = document.createElement("div");
             let divBodyRight = document.createElement("div");
-            divBodyLeft.className = "buyShow";
+            divBodyLeft.className = "buyShowLeft";
             divBodyLeft.id = "divBodyLeft";
             divBodyLeft.innerHTML = `<img class="imgBuyShow" src="${k.img}" alt="">`;
-            divBodyRight.className = "buyShow";
+            divBodyRight.className = "buyShowRight";
             divBodyRight.id = "divBodyRight";
             divBody.append(divBodyLeft);
             divBody.append(divBodyRight);
 
             let divBodyRightAccount = document.createElement("div");
             let divBodyRightDelete = document.createElement("div");
-            divBodyRightAccount.id = "buyAccount";
+            divBodyRightAccount.className = `buyAccount`;
+            divBodyRightAccount.id = `buyAccount_${k.id}`;
             divBodyRightAccount.innerHTML = `
-                <h3 id="buyAccountCU_${k.id}">${k.price}</h3>
-                <h3 id="buyAccountTotal_${k.id}">${(k.price) * (k.stoke)}</h3>
+                <h3 class="buyAccountCU" id="buyAccountCU_${k.id}"> $ ${k.price}</h3>
+                <h3 class="buyAccountTotal" id="buyAccountTotal_${k.id}"> ${(k.price) * (k.stoke)}</h3>
             `;
             divBodyRight.append(divBodyRightAccount);
-            divBodyRightDelete.id = "buyDelete";
+            divBodyRightDelete.className = `buyDelete`;
+            divBodyRightDelete.id = `buyDelete_${k.id}`;
             divBodyRightDelete.innerHTML = `
-                <input class="account" id=input_buy_${k.id} type="number" min="1" max="100" value="1">
-                <span class="iconify iconify_buy" id=buy_${k.id} onclick=deleteBuy(event) data-icon="ic:outline-delete-forever" style="color: white;"></span>
+                <input class="account_delete" id=input_buy_${k.id} type="number" min="1" max="100" value="1">
+                <span class="iconify iconify_buy iconify_delete" id=buy_${k.id} onclick=deleteBuy(event) data-icon="ic:outline-delete-forever" style="color: white;"></span>
             `;
             divBodyRight.append(divBodyRightDelete);
         }
@@ -328,13 +330,13 @@ function drawStructureBuy(id, obj) {
 
     }
 
-    if (c === 0) {
-        let footer = document.getElementById("BuyFooter");
-        let marketFooter = document.createElement("footer");
-        marketFooter.id = "marketFooter";
-        marketFooter.innerHTML = `<h2 id="totalBuy"></h2>`;
-        footer.append(marketFooter);
-    }
+    // if (c === 0) {
+    //     let footer = document.getElementById("BuyFooter");
+    //     let marketFooter = document.createElement("footer");
+    //     marketFooter.id = "marketFooter";
+    //     marketFooter.innerHTML = `<h2 id="totalBuy">TOTAL A PAGAR: $ 0 </h2>`;
+    //     footer.append(marketFooter);
+    // }
 
 }//End FUNCTION-drawBuy
 
@@ -373,13 +375,13 @@ function drawRewriteBase(id) {
     let input = document.getElementById(`divInput${id}`);
     input.innerHTML = `
         <input class="account" id=inputb_${id} type="number" min="1" max="100" value="1">
-        <button class="+" id=b_${id}+ onclick="RegisterAmount(event)">+</button>
-        <button class="-" id=b_${id}- onclick="RegisterAmount(event)">-</button>
+        <button class="+ plus" id=b_${id}+ onclick="RegisterAmount(event)">+</button>
+        <button class="- subt" id=b_${id}- onclick="RegisterAmount(event)">-</button>
     `;
     if (createBtn === 1) {
         let div = document.getElementById(`div_${id}`);
         let content = document.createElement("div");
-        content.className = "input";
+        content.className = "inputNumber";
         content.id = `divBtn${id}`;
         content.innerHTML = `
         <span class="iconify" id=${id} onclick=addBuy(event) data-icon="mdi:shopping-cart-arrow-down" style="color: white;"></span>
@@ -391,8 +393,8 @@ function drawRewriteBase(id) {
 
 //Escribe el total de los productos seleccionados en el FRONT
 function drawTotal(total) {
-    let tag = document.getElementById("totalBuy");
-    tag.innerText = `TOTAL A PAGAR: ${total}`;
+    let tag = document.getElementById("totalBuyP");
+    tag.innerText = `TOTAL A PAGAR: $ ${total}`;
 }//End FUNCTION-drawTotal
 
 

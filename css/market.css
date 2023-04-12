@@ -12,49 +12,302 @@ html {
 
 #c {
   width: 100vw;
-  height: 100vh;
+  height: 200%;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 13% 85% auto;
+  grid-template-areas: "nav" "content" "footer";
 }
-
-.sec_principal {
-  width: 100vw;
+#c .navegator {
+  grid-area: nav;
+  width: 100%;
   height: auto;
-  padding: 5px;
+  padding-left: 7%;
+  justify-items: center;
+}
+#c .navegator .titlePrincipal {
+  display: inline;
+  color: antiquewhite;
+  font-family: "Press Start 2P", cursive;
+  font-size: 800%;
+}
+#c .container {
+  grid-area: content;
+  width: 100vw;
+  height: 2000px;
+  display: grid;
+  grid-template-rows: 10% auto;
+  grid-template-areas: "search" "info";
+}
+#c .container #S1 {
+  grid-area: search;
+  width: 100vw;
+  height: 100%;
+  border-top: 2px solid antiquewhite;
+  border-bottom: 2px solid antiquewhite;
+}
+#c .container .sec_principal {
+  grid-area: info;
+  width: auto;
+  height: auto;
+  padding: 15px 5px;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid rgb(200, 200, 200);
+  justify-content: space-evenly;
+  border-top: 2px solid antiquewhite;
+  border-bottom: 2px solid antiquewhite;
 }
-.sec_principal .content {
-  border: 2px solid rgb(124, 153, 249);
+#c .container .sec_principal .content {
+  grid-area: base;
+  width: 60%;
+  height: auto;
+  border: 2px solid rgb(244, 13, 221);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.sec_principal .content .item {
+#c .container .sec_principal .content .item {
   width: 300px;
   height: 400px;
   border: 2px solid wheat;
   margin: 10px;
+  padding: 12px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 1.2rem white;
 }
-.sec_principal .content .item .iconify {
+#c .container .sec_principal .content .item:hover {
+  box-shadow: 0 0 2rem rgb(228, 3, 191);
+}
+#c .container .sec_principal .content .item .titleItem {
+  margin: 15px 0;
+}
+#c .container .sec_principal .content .item .imgItem {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#c .container .sec_principal .content .item .iconify {
   width: 60px;
   height: 60px;
+  margin-bottom: 10px;
   border: 2px solid wheat;
   border-radius: 50%;
   background-color: blueviolet;
 }
-.sec_principal .content .item button {
-  width: 60px;
-  height: 60px;
-  background-color: rgb(212, 20, 212);
+#c .container .sec_principal .content .item .iconify:hover {
+  box-shadow: 0 0 1.2rem rgb(228, 3, 191);
 }
-.sec_principal .market {
-  width: 200px;
-  height: 300px;
-  border: 2px solid rgb(249, 124, 124);
-}
-.sec_principal .market .imgBuyShow {
-  width: 200px;
+#c .container .sec_principal .content .item .inputNumber {
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+  grid-template-areas: "subt input plus";
+  width: auto;
   height: auto;
+  align-items: center;
+}
+#c .container .sec_principal .content .item .inputNumber .plus {
+  grid-area: plus;
+}
+#c .container .sec_principal .content .item .inputNumber .plus:hover {
+  box-shadow: 0 0 1.2rem rgb(228, 3, 191);
+}
+#c .container .sec_principal .content .item .inputNumber .account {
+  grid-area: input;
+  margin: 0 2px;
+  border: 1px solid wheat;
+  border-radius: 5px;
+}
+#c .container .sec_principal .content .item .inputNumber .subt {
+  grid-area: subt;
+}
+#c .container .sec_principal .content .item .inputNumber .subt:hover {
+  box-shadow: 0 0 1.2rem rgb(228, 3, 191);
+}
+#c .container .sec_principal .content .item button {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  background-color: rgb(212, 20, 212);
+  font-family: "Press Start 2P", cursive;
+  font-size: large;
+  border-radius: 50%;
+}
+#c .container .sec_principal .content .item button:hover {
+  box-shadow: 0 0 1.2rem rgb(228, 3, 191);
+}
+#c .container .sec_principal .market {
+  grid-area: add;
+  width: 35%;
+  height: auto;
+  border: 2px solid rgb(244, 13, 221);
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+#c .container .sec_principal .market .InfoBuy {
+  border: 2px solid greenyellow;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 7px;
+}
+#c .container .sec_principal .market .InfoBuy:hover {
+  box-shadow: 0 0 1.2rem rgb(54, 255, 47);
+}
+#c .container .sec_principal .market .InfoBuy .buyShow {
+  display: grid;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: "nave" "content";
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav {
+  grid-area: nave;
+  display: grid;
+  grid-template-rows: 35% 65%;
+  grid-template-areas: "Title" "ico";
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowTitle {
+  grid-area: Title;
+  text-align: center;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowIco {
+  grid-area: ico;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowIco .buyShowIconoo {
+  width: 52px;
+  height: 52px;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowIco .buyShowIconoo .iconify_buy {
+  width: 45px;
+  height: 45px;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowIco .buyShowNumber {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowIco .buyShowNumber h3 {
+  width: 30px;
+  height: 30px;
+  font-size: medium;
+  color: black;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-areas: "left right";
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowLeft {
+  grid-area: left;
+  display: grid;
+  place-items: center;
+  padding-top: 15px;
+  border-top: 2px solid greenyellow;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowLeft .imgBuyShow {
+  width: 250px;
+  height: auto;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight {
+  grid-area: right;
+  display: grid;
+  grid-template-rows: 55% 45%;
+  grid-template-areas: "price" "number";
+  border-top: 2px solid greenyellow;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyAccount {
+  grid-area: price;
+  padding: 15px 0;
+  display: grid;
+  place-items: center;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyAccount .buyAccountCU, #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyAccount .buyAccountTotal {
+  text-align: center;
+  font-size: medium;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyDelete {
+  grid-area: number;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-areas: "numbe delete";
+  align-items: center;
+  justify-items: center;
+  border-top: 2px solid greenyellow;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyDelete .account_delete {
+  grid-area: numbe;
+  margin: 0 2px;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  height: 17px;
+  font-size: medium;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyDelete .iconify_delete {
+  grid-area: delete;
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+}
+#c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyDelete .iconify_delete:hover {
+  box-shadow: 0 0 1.2rem rgb(250, 75, 75);
+}
+#c .end {
+  grid-area: footer;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#BuyNave {
+  padding: 12px;
+  border: 2px solid greenyellow;
+  border-radius: 12px;
+  margin-bottom: 7px;
+}
+#BuyNave:hover {
+  box-shadow: 0 0 1.2rem rgb(54, 255, 47);
+}
+#BuyNave .divTitleBuy {
+  width: auto;
+  justify-items: center;
+  padding: 0 10px;
+}
+#BuyNave .divTitleBuy h1 {
+  color: aqua;
+  font-size: large;
+  text-align: center;
+  box-shadow: 0 1.6rem 1.2rem aqua;
+  width: auto;
+}
+
+#BuyFooter {
+  padding: 12px 20px 12px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 2px solid greenyellow;
+  border-radius: 12px;
+}
+#BuyFooter:hover {
+  box-shadow: 0 0 1.2rem rgb(54, 255, 47);
 }
 
 strong {
@@ -65,8 +318,16 @@ h2 {
   color: aqua;
 }
 
-h2 {
-  color: rgb(47, 255, 0);
+h3 {
+  color: wheat;
+}
+
+h1,
+h2,
+h3,
+p,
+input {
+  font-family: "Press Start 2P", cursive;
 }
 
 #iconSend {
@@ -74,7 +335,7 @@ h2 {
   height: 40px;
 }
 
-.iconify_buy {
-  width: 40px;
-  height: 40px;
+.redesSociales {
+  width: 70px;
+  height: 70px;
 }/*# sourceMappingURL=market.css.map */
