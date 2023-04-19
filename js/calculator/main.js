@@ -291,7 +291,7 @@ function answer() {
         icon: 'success',
         text: 'Su resultado es:',
         title: Rr,        
-        footer: '<a href="../calculator/js/index.html">Inicio</a>'
+        footer: 'JS2C'
     })
 }//End function answer
 
