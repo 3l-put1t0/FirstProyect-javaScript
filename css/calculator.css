@@ -149,4 +149,21 @@ html {
 .cl:focus {
   box-shadow: 0 0 4rem rgb(0, 0, 0);
   transition: 0.5s;
+}
+
+.btnInicio {
+  width: auto;
+  height: auto;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  background-color: rgb(190, 190, 190);
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5%;
+  padding: 0.2rem;
+  box-shadow: 0 0 5rem wheat;
+  color: rgb(23, 23, 23);
+  text-decoration: none;
+}
+.btnInicio:hover {
+  box-shadow: 0 0 5rem aqua;
 }/*# sourceMappingURL=calculator.css.map */

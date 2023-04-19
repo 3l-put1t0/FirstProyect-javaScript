@@ -32,7 +32,7 @@
         width: 100vw;
         height: 2000px;
         display: grid;
-        grid-template-rows: 10% auto;
+        grid-template-rows: 5% auto;
         grid-template-areas:
             "search"
             "info";
@@ -43,6 +43,27 @@
             height: 100%;
             border-top: 2px solid $color_borderSections;
             border-bottom: 2px solid $color_borderSections;
+            display: grid;
+            place-items: center;
+            align-content: center;
+
+            .btnInicio{
+                width: auto;
+                height: auto;
+                font-family: "Press Start 2P", cursive;
+                font-size: 3rem;
+                background-color: $color_btnInicio;
+                border: 1px solid $color_btnInicio;
+                border-radius: 5%;
+                padding: 0.2rem;
+                box-shadow: 0 0 5rem $color_shadow_btnInicio;
+                color: $colorBtnFont;
+                text-decoration: none;
+                &:hover{
+                    // background-color: $color_btnHInicio;
+                    box-shadow: 0 0 5rem $color_shadow_btnHInicio;
+                }
+            }
         }
 
         .sec_principal {
@@ -65,7 +86,7 @@
                 grid-area: base;
                 width: 60%;
                 height: auto;
-                border: 2px solid $color_sectionProducts;
+                border: 3px solid $color_sectionProducts;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
@@ -92,6 +113,8 @@
                     }
 
                     .imgItem {
+                        width: 130px;
+                        height: 130px;
                         object-fit: cover;
                     }
 
@@ -162,7 +185,7 @@
                 grid-area: add;
                 width: 35%;
                 height: auto;
-                border: 2px solid $color_sectionBasquet;
+                border: 3px solid $color_sectionBasquet;
                 display: flex;
                 flex-direction: column;
                 padding: 12px;
@@ -231,6 +254,7 @@
                                     flex-direction: column;
                                     justify-content: center;
                                     align-items: center;
+                                    box-shadow: 0 0 1.8rem $color_shadowNumberItem;
 
                                     h3 {
                                         width: 30px;
@@ -247,7 +271,7 @@
                         .buyShowBody {
                             grid-area: content;
                             display: grid;
-                            grid-template-columns: 65% 35%;
+                            grid-template-columns: 65% auto;
                             grid-template-areas: "left right";
 
                             .buyShowLeft{
@@ -258,7 +282,7 @@
                                 border-top: 2px solid $color_buyItems;
 
                                 .imgBuyShow {
-                                    width: 250px;
+                                    width: 90px;
                                     height: auto;
                                 }
                             }
@@ -271,17 +295,26 @@
                                 "number";
                                 .buyAccount{
                                     grid-area: price;
+                                    width: auto;
+                                    height: auto;
                                     padding: 15px 0;
                                     display: grid;
                                     place-items: center;
                                     .buyAccountCU, .buyAccountTotal{
                                         text-align: center;
                                         font-size: medium;
-                                        
                                     }
+                                    @media (min-width: 750px) and (max-width: 300px) {
+                                        .buyAccountCU, .buyAccountTotal{
+                                            font-size: small;
+                                        }
+                                    }
+                                      
                                 }
                                 .buyDelete{
                                     grid-area: number;
+                                    width: auto;
+                                    height: auto;
                                     display: grid;
                                     grid-template-columns: 45% 55%;
                                     grid-template-areas: "numbe delete";

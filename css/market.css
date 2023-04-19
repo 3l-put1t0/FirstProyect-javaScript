@@ -36,7 +36,7 @@ html {
   width: 100vw;
   height: 2000px;
   display: grid;
-  grid-template-rows: 10% auto;
+  grid-template-rows: 5% auto;
   grid-template-areas: "search" "info";
 }
 #c .container #S1 {
@@ -45,6 +45,25 @@ html {
   height: 100%;
   border-top: 2px solid antiquewhite;
   border-bottom: 2px solid antiquewhite;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+#c .container #S1 .btnInicio {
+  width: auto;
+  height: auto;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  background-color: rgb(190, 190, 190);
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5%;
+  padding: 0.2rem;
+  box-shadow: 0 0 5rem aqua;
+  color: rgb(23, 23, 23);
+  text-decoration: none;
+}
+#c .container #S1 .btnInicio:hover {
+  box-shadow: 0 0 5rem rgb(255, 255, 255);
 }
 #c .container .sec_principal {
   grid-area: info;
@@ -61,7 +80,7 @@ html {
   grid-area: base;
   width: 60%;
   height: auto;
-  border: 2px solid rgb(244, 13, 221);
+  border: 3px solid rgb(244, 13, 221);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -86,6 +105,8 @@ html {
   margin: 15px 0;
 }
 #c .container .sec_principal .content .item .imgItem {
+  width: 130px;
+  height: 130px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -142,7 +163,7 @@ html {
   grid-area: add;
   width: 35%;
   height: auto;
-  border: 2px solid rgb(244, 13, 221);
+  border: 3px solid rgb(244, 13, 221);
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -201,6 +222,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 1.8rem white;
 }
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowNav .buyShowIco .buyShowNumber h3 {
   width: 30px;
@@ -211,7 +233,7 @@ html {
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody {
   grid-area: content;
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 65% auto;
   grid-template-areas: "left right";
 }
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowLeft {
@@ -222,7 +244,7 @@ html {
   border-top: 2px solid greenyellow;
 }
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowLeft .imgBuyShow {
-  width: 250px;
+  width: 90px;
   height: auto;
 }
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight {
@@ -234,6 +256,8 @@ html {
 }
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyAccount {
   grid-area: price;
+  width: auto;
+  height: auto;
   padding: 15px 0;
   display: grid;
   place-items: center;
@@ -242,8 +266,15 @@ html {
   text-align: center;
   font-size: medium;
 }
+@media (min-width: 750px) and (max-width: 300px) {
+  #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyAccount .buyAccountCU, #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyAccount .buyAccountTotal {
+    font-size: small;
+  }
+}
 #c .container .sec_principal .market .InfoBuy .buyShow .buyShowBody .buyShowRight .buyDelete {
   grid-area: number;
+  width: auto;
+  height: auto;
   display: grid;
   grid-template-columns: 45% 55%;
   grid-template-areas: "numbe delete";

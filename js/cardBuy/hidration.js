@@ -1,54 +1,54 @@
-const obj = [
-    {
-        id: "00A",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-    {
-        id: "00B",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-    {
-        id: "00C",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-    {
-        id: "00D",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-    {
-        id: "A00",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-    {
-        id: "B00",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-    {
-        id: "C01",
-        name: "articulo",
-        img: "../img/xx.png",
-        stoke: 20,
-        price: 10000
-    },
-]
+// const obj = [
+//     {
+//         id: "00A",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+//     {
+//         id: "00B",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+//     {
+//         id: "00C",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+//     {
+//         id: "00D",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+//     {
+//         id: "A00",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+//     {
+//         id: "B00",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+//     {
+//         id: "C01",
+//         name: "articulo",
+//         img: "../img/xx.png",
+//         stoke: 20,
+//         price: 10000
+//     },
+// ]
 // fetch("../JSON/item.json")
 //     .then((response) => response.json())
 //     .then((data) => console.log(data)
@@ -118,6 +118,15 @@ const drawHTML = () => {
 
     content.append(S1);
     content.append(S2);
+
+    const inicio = document.createElement("a");
+    inicio.className = "btnInicio";
+    inicio.href = "../index.html";
+    inicio.innerText = "INICIO"
+    // inicio.innerHTML = `
+    //     <button href=> </button>
+    // `;
+    S1.append(inicio);
 
     //Dentro del la sección con id "S1" se va a agraupar la parte del buscador y el logueo del usuario
     const S11 = document.createElement("section");      //Sección de buscar
@@ -191,9 +200,9 @@ const drawHTML = () => {
     insta.id = "insta";
     insta.innerHTML = `<span class="iconify ico_fotter" data-icon="mdi:instagram" style="color: white;"></span>`;
 
-    foot.append(face);
-    foot.append(youtube);
-    foot.append(insta);
+    // foot.append(face);
+    // foot.append(youtube);
+    // foot.append(insta);
 }//End FUNCTION drawHTML
 
 

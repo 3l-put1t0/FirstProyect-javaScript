@@ -1,162 +1,248 @@
 [
     {
       "id": "00A",
-      "name": "PRUEBAAAA",
-      "img": "../img/paisaje.png",
-      "price": 50000,
-      "stoke": 50
+      "name": "Diamante",
+      "img": "../img/diamante.png",
+      "price": 100000,
+      "stoke": 1000
     },
     {
-      "id": "00B",
-      "name": "PRUEBAAA 1 Quest XI",
-      "img": "../img/paisaje.png",
+      "id": "00L",
+      "name": "Lingote de oro",
+      "img": "../img/Lingote_de_oro.png",
+      "price": 45500,
+      "stoke": 320    
+    },
+    {
+      "id": "00Q",
+      "name": "Lingote de hierro",
+      "img": "../img/Lingote_de_hierro.png",
       "price": 50000,
       "stoke": 20    
     },
     {
+      "id": "00B",
+      "name": "Casco de diamante",
+      "img": "../img/cascodia.png",
+      "price": 500000,
+      "stoke": 20    
+    },
+    {
       "id": "00C",
-      "name": "PRUEBAAAA 2",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Botas de diamante",
+      "img": "../img/botasdia.png",
+      "price": 500000,
       "stoke": 30    
     },
     {
       "id": "00D",
-      "name": "PRUEBA_3",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Azadon de diamante",
+      "img": "../img/azadondia.png",
+      "price": 30000,
       "stoke": 220    
     },
     {
       "id": "00E",
-      "name": "PRUEBAAAA4",
-      "img": "../img/paisaje.png",
+      "name": "Hacha de diamante",
+      "img": "../img/hachadia.png",
       "price": 50000,
       "stoke": 250    
     },
     {
       "id": "00F",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Pala de diamante",
+      "img": "../img/paladia.png",
+      "price": 45000,
       "stoke": 820    
     },
     {
       "id": "00G",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Pica de diamante",
+      "img": "../img/picadia.png",
       "price": 50000,
       "stoke": 260    
     },
     {
       "id": "00H",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Espada de diamante",
+      "img": "../img/espadadia.png",
+      "price": 120000,
       "stoke": 920    
     },
     {
       "id": "00I",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Pantalon de diamante",
+      "img": "../img/pantalondia.png",
+      "price": 500000,
       "stoke": 320    
     },
     {
       "id": "00J",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Peto de diamante",
+      "img": "../img/petodia.png",
+      "price": 500000,
       "stoke": 420    
     },
     {
       "id": "00K",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
-      "stoke": 820    
-    },
-    {
-      "id": "00L",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
-      "stoke": 320    
+      "name": "Manzana Dorada",
+      "img": "../img/Manzana_Dorada.png",
+      "price": 12500,
+      "stoke": 8200    
     },
     {
       "id": "00N",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
+      "name": "Hacha de oro",
+      "img": "../img/Hacha_de_oro.png",
+      "price": 20000,
       "stoke": 220    
     },
     {
       "id": "00O",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
-      "stoke": 220    
+      "name": "Hacha de hierro",
+      "img": "../img/Hacha_de_hierro.png",
+      "price": 22000,
+      "stoke": 2152    
     },
+
+
     {
       "id": "00P",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Botas de hierro",
+      "img": "../img/Botas_de_hierro.png",
       "price": 50000,
-      "stoke": 20    
-    },
-    {
-      "id": "00Q",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
-      "price": 50000,
-      "stoke": 20    
+      "stoke": 200    
     },
     {
       "id": "00R",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Botas de oro",
+      "img": "../img/Botas_de_oro.png",
       "price": 50000,
       "stoke": 320    
     },
     {
       "id": "00S",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Peto de hierro",
+      "img": "../img/Peto_de_hierro.png",
       "price": 50000,
       "stoke": 420    
     },
     {
       "id": "00T",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Peto de oro",
+      "img": "../img/Peto_de_oro.png",
       "price": 50000,
       "stoke": 270    
     },
     {
       "id": "00U",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Casco de hierro",
+      "img": "../img/Casco_de_hierro.png",
       "price": 50000,
       "stoke": 20    
     },
     {
       "id": "00V",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Casco de oro",
+      "img": "../img/Casco_de_oro.png",
       "price": 50000,
       "stoke": 280    
     },
     {
       "id": "00W",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Pantalon de hierro",
+      "img": "../img/Pantalon_de_hierro.png",
       "price": 50000,
       "stoke": 20    
     },
     {
       "id": "00X",
-      "name": "Dragon Quest XI",
-      "img": "../img/paisaje.png",
+      "name": "Pantalon de oro",
+      "img": "../img/Pantalon_de_oro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "70X",
+      "name": "Espada de oro",
+      "img": "../img/Espada_de_oro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7AX",
+      "name": "Espada de hierro",
+      "img": "../img/Espada_de_hierro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7SX",
+      "name": "Pica de hierro",
+      "img": "../img/Pica_de_hierro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7DC",
+      "name": "Pica de oro",
+      "img": "../img/Pica_de_oro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7QC",
+      "name": "Pala de hierro",
+      "img": "../img/Pala_de_hierro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7QW",
+      "name": "Pala de oro",
+      "img": "../img/Pala_de_oro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7QE",
+      "name": "Azadon de hierro",
+      "img": "../img/Azadon_de_hierro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "7QR",
+      "name": "Azadon de oro",
+      "img": "../img/Azadon_de_oro.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "PQR",
+      "name": "Miel",
+      "img": "../img/Miel.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "PQP",
+      "name": "Botella de vidrio",
+      "img": "../img/Botella.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "PWP",
+      "name": "Botella de agua",
+      "img": "../img/Botella_de_agua.png",
+      "price": 50000,
+      "stoke": 290    
+    },
+    {
+      "id": "PPP",
+      "name": "Pocion",
+      "img": "../img/Pocion.png",
       "price": 50000,
       "stoke": 290    
     }

@@ -462,6 +462,7 @@ class Action {
                             selectItems++;
                             i.stoke = i.stoke + amount;
                             drawInfoBuy(i.id, obj)
+                            localStorage.setItem(i.id, i.stoke);
                         }
                     }
                 }
@@ -484,6 +485,7 @@ class Action {
                             }
                             i.stoke = i.stoke - amount;
                             this.addElemenetBase(i.id, objProduct, amount);
+                            localStorage.setItem(i.id, i.stoke);
                             drawInfoBuy(i.id, obj);
                             drawInfo(objProduct);
                             drawRewriteBase(id);
@@ -491,6 +493,7 @@ class Action {
                                 selectItems--;
                                 drawRemoveBasquet(i.id, obj);
                                 this.deleteElemet(existItem, obj);
+                                localStorage.removeItem(i.id);
 
                             }
                         }
