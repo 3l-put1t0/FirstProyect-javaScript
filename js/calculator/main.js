@@ -18,6 +18,8 @@ console.log(Boolean(objOperation[0]))
 
 function input(event) {
     let _Txt = event.target.innerText;
+    let id = event.target.id;
+    console.log("ID " + id);
     let _write = true;
     let _boolSign = false;
 
@@ -287,9 +289,9 @@ function answer() {
     clean();
     Swal.fire({
         icon: 'success',
-        title: Rr,
-        text: 'Something went wrong!',
-        footer: '<a href="">Why do I have this issue?</a>'
+        text: 'Su resultado es:',
+        title: Rr,        
+        footer: '<a href="../calculator/js/index.html">Inicio</a>'
     })
 }//End function answer
 

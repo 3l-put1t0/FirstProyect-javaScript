@@ -182,5 +182,15 @@ for (const i of hidration) {
 
 }
 
+const c = document.getElementsByClassName("c");
+const inicio = document.createElement("a");
+inicio.className = "btnInicio";
+inicio.href = "../index.html";
+inicio.innerText = "INICIO"
+// inicio.innerHTML = `
+//     <button href=> </button>
+// `;
+c[0].append(inicio);
+
 
 

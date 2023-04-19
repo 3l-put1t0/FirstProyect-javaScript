@@ -166,3 +166,21 @@
         transition: 0.5s;
     }
 }
+
+.btnInicio{
+    width: auto;
+    height: auto;
+    font-family: "Press Start 2P", cursive;
+    font-size: 3rem;
+    background-color: $color_btnInicio;
+    border: 1px solid $color_btnInicio;
+    border-radius: 5%;
+    padding: 0.2rem;
+    box-shadow: 0 0 5rem $color_shadow_btnInicioCalcu;
+    color: $colorBtnFont;
+    text-decoration: none;
+    &:hover{
+        // background-color: $color_btnHInicio;
+        box-shadow: 0 0 5rem $color_shadow_btnInicio;
+    }
+}
