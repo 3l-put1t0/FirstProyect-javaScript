@@ -237,7 +237,7 @@ function drawRemoveBase(id, obj) {
             const notice = document.createElement("div");
             notice.className = "MSM";
             notice.id = `MSM_${obj[i].id}`;
-            notice.innerHTML = `<h4>${msm}</h4>
+            notice.innerHTML = `<h4 class="msmSend">${msm}</h4>
             <span class="iconify" id="iconSend" data-icon="material-symbols:sentiment-very-dissatisfied-outline" style="color: white;"></span>`;
             div.append(notice);
         }

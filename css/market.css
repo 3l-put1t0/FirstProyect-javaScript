@@ -369,4 +369,14 @@ input {
 .redesSociales {
   width: 70px;
   height: 70px;
+}
+
+.MSM {
+  display: grid;
+  place-items: center;
+}
+.MSM .msmSend {
+  font-family: "Press Start 2P", cursive;
+  color: antiquewhite;
+  font-size: 230%;
 }/*# sourceMappingURL=market.css.map */
